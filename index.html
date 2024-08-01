@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador ONE</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header class="titulo">
+        <h1 class="titulo__texto1">Decodificador ONE</h1>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo1">
+            <textarea class="apresentacao__conteudo__texto1" name="text" id="inputText" placeholder="Digite seu Texto Aqui !!!"></textarea>
+       
+
+            <div class="apresentacao__div__botao">
+                <button class="apresentacao__botao1 apresentacao__botao"
+                onclick="encrypt()">
+                    Criptografar</button>
+                <button id="btn__descripto" class="apresentacao__botao2 apresentacao__botao" 
+                onclick="decrypt()">
+                    Descriptografar
+                </button>
+            </div>
+        </section>
+
+
+        <section class="apresentacao__conteudo2" >
+                <p id="outputText"></p>
+            <div id="btn__cripto">
+                <img class="area__div__img1" src="High quality products 1 1.svg" alt="">
+                <h2 class="area__div__texto1">Nenhuma Mensagem Encontrada.</h2>
+                <p class="area__div__parag1"> Digite um texto que você deseja criptografar ou descriptografar. </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="funcoes.jsx"></script>
+</body>
+
+</html>
