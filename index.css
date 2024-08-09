@@ -7,6 +7,7 @@
 :root {
     --cor-fundo-principal: #E5E5E5;
     --cor-primaria: #0A3871;
+    --cor-primaria-variacao-1: #105bb7;
     --cor-secundaria: #FFFFFF;
 
 }
@@ -16,12 +17,15 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-fundo-principal);
 
-
 }
 
 .titulo {
     padding: 2% 0% 2% 3%;
-    color: var(--cor-primaria);
+}
+
+.titulo__texto1 {
+    color: var(--cor-secundaria);
+
 }
 
 .apresentacao {
@@ -31,9 +35,7 @@ body {
 }
 
 .apresentacao__conteudo1 {
-    width: 40rem;
-    height: 50rem;
-    background-color: var(--cor-fundo-principal);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +59,7 @@ body {
 .apresentacao__conteudo__texto1 {
     width: 40rem;
     height: 30rem;
-    font-size: 25px;
+    font-size: 2.5rem;
     background-color: var(--cor-fundo-principal);
     color: var(--cor-primaria);
     border: double 1rem;
@@ -69,39 +71,95 @@ body {
 
 }
 
+.apresentacao__conteudo__texto2 {
+    width: 22rem;
+    height: 35rem;
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    outline: none;
+    resize: none;
+    border: none;
+
+}
+
+.text__cripto2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+    display: none;
+}
+
 .apresentacao__div__botao {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     width: 40rem;
     margin-top: 5rem;
+
 }
 
 .apresentacao__botao {
-    width: 14rem;
+    width: 18rem;
     padding: 1rem;
     border-radius: 24px;
+    cursor: pointer;
+    border: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+
 }
 
 .apresentacao__botao1 {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+
 }
 
+.apresentacao__botao1:hover {
+    background-color: var(--cor-primaria-variacao-1);
+}
 
 
 .apresentacao__botao2 {
-    border-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
     color: var(--cor-primaria);
+
 }
 
-.apresentacao__conteudo__texto2 {
+.apresentacao__botao2:hover {
 
-    border-radius: 32px;
-    border: none;
+    background-color: var(--cor-primaria-variacao-1);
+    color: var(--cor-secundaria);
+
+}
+
+.apresentacao__botao3 {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-secundaria);
+    color: var(--cor-secundaria);
+
+}
+
+.apresentacao__botao3:hover {
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+    width: 16rem;
+
 }
 
 .area__div__texto1 {
     margin-top: 32px;
     margin-bottom: 16px;
+}
+
+.imagem {
+    background-image: url("./assets/img/vecteezy_abstract-technology-background-and-big-data_3480780-1.jpg");
 }
